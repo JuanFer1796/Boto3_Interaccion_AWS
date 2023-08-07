@@ -1,50 +1,36 @@
+# Interacción con AWS usando Boto3
 
-# Laboratorio 2: Categorización de Películas por Género
-
-## Autores
-- Jonathan Espinoza (20022)
-- Juan Fernando Ramirez (20666)
+Este repositorio contiene un cuaderno Jupyter que demuestra cómo interactuar con Amazon Web Services (AWS) utilizando la biblioteca Boto3 en Python.
 
 ## Descripción
-Este repositorio contiene el trabajo realizado en el Laboratorio 2, que se centra en la categorización de películas por género utilizando redes neuronales. El análisis se realiza utilizando TensorFlow y pandas, entre otras bibliotecas.
 
-## Descripción Detallada
+El cuaderno cubre varios aspectos de la interacción con el servicio de almacenamiento S3 de AWS:
+- Creación de buckets en S3.
+- Subir y compartir documentos con configuraciones públicas y privadas.
+- Procesamiento y concatenación de respuestas utilizando pandas.
 
-En este laboratorio, se aborda el desafío de categorizar películas basándose en su género. Para ello, se utiliza un conjunto de datos que contiene diversas características de las películas, incluyendo su género. El principal desafío radica en transformar los datos de género, que se presentan en formato de cadena de texto, en una forma que pueda ser utilizada por una red neuronal. 
-
-El proceso comienza con la carga y exploración del conjunto de datos, seguido de la transformación y creación de variables dummy para los géneros de las películas. Una vez que los datos están en el formato adecuado, se procede a diseñar y entrenar una red neuronal con TensorFlow para categorizar las películas.
-
-El cuaderno contiene tanto el código necesario para realizar estas operaciones como visualizaciones y análisis intermedios que ayudan a comprender mejor el proceso y los resultados obtenidos.
-
-## Contenido del Repositorio
-
-- `Laboratorio 2 20022 20666.ipynb`: Cuaderno Jupyter que contiene todo el análisis y modelado.
+Se utilizan tanto el cliente S3 como el cliente SNS de Boto3 para demostrar la interacción con diferentes servicios dentro de AWS.
 
 ## Requisitos
-Para replicar y ejecutar el cuaderno, necesitarás las siguientes bibliotecas:
 
-- TensorFlow
+Para replicar y ejecutar el cuaderno, necesitarás:
+- Python
+- Boto3
 - pandas
-- numpy
-- scipy
-- matplotlib
-- scikit-learn
 
-Puedes instalarlas usando pip:
+Además, deberás configurar tus credenciales de AWS (AWS_KEY_ID y AWS_SECRET) para poder interactuar con los servicios de AWS.
 
-```
-pip install tensorflow pandas numpy scipy matplotlib scikit-learn
-```
-
-## Instrucciones de Uso
+## Uso
 
 1. Clone este repositorio a tu máquina local.
-2. Navega al directorio del repositorio.
-3. Instala las bibliotecas requeridas (ver sección Requisitos).
-4. Abre el cuaderno Jupyter `Laboratorio 2 20022 20666.ipynb` para ver el análisis y ejecutarlo.
+2. Instala las bibliotecas requeridas.
+3. Configura tus credenciales de AWS.
+4. Ejecuta el cuaderno Jupyter `Boto3 interactuar con la nube.ipynb`.
 
 ## Contribuciones
+
 Si deseas contribuir a este proyecto, por favor, abre un Issue o Pull Request en GitHub.
 
 ## Licencia
-Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
